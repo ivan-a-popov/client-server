@@ -9,6 +9,7 @@ class Dispatcher:
         self.index += 1
         task['id'] = self.index
         task['status'] = "queued"
+        task['result'] = None
         self.task_list[self.index] = task
 
     def get_task(self, task_id: int):
